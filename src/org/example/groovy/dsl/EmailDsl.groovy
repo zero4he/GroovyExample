@@ -35,7 +35,7 @@ class EmailDsl {
         this.body = body
     }
 
-    def autoSend() {
+    private autoSend() {
         println("正在发生邮件...")
         println("From: " + from)
         println("To: " + to)
@@ -54,7 +54,7 @@ class EmailDsl {
      * @return
      */
     def methodMissing(String methodName, args) {
-        println("方法丢失:" + methodName)
+        println("方法丢失:$methodName()\n")
     }
 
     public static void main(String[] args) {
@@ -62,7 +62,7 @@ class EmailDsl {
             from "zero.he@ccjk.com" //会调用from()方法
             to "may.xie@ccjk.com"
             body("hello")
-            haha()//为定义方法,会调用methodMissing()方法
+            undefMethod()//为定义方法,会调用methodMissing()方法
         })
     }
 }
