@@ -5,4 +5,4 @@
 xxx\groovy-2.4.7\src\src\examples
 
 ##Groovy在线例子
-https://github.com/groovy/groovy-core/tree/master/src/examples
+https://github.com/apache/groovy/tree/master/src/examples
